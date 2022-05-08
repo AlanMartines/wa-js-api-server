@@ -63,7 +63,11 @@ cd wa-js-api-server
 # cp .env .env.local
 
 # create container
+<<<<<<< HEAD
 docker-compose -f docker-compose.lpwp.yml up --build -d
+=======
+docker-compose -f docker-compose.yml up --build -d
+>>>>>>> upstream/main
 ```
 
 ## Dockerfile
@@ -76,7 +80,11 @@ git clone https://github.com/wppconnect-team/wa-js-api-server.git
 cd wa-js-api-server
 
 # create image
+<<<<<<< HEAD
 docker build -t wppconnect-team/wa-js-api-server:1.0.0 -f Dockerfile.backend .
+=======
+docker build -t wppconnect/wa-js-api-server:1.0.0 -f Dockerfile .
+>>>>>>> upstream/main
 
 # create container
 # if you want to change some setting you can set ENVIRONMENT variables
@@ -90,8 +98,14 @@ docker run -d -p 8000:8000 --name WPPconnectLinkPreview \
 	-e CACHE_MAX_ITEMS=500 \
 	-e CACHE_MAX_SIZE=104857600 \
 	-e CACHE_TTL=3600000 \
+<<<<<<< HEAD
 wppconnect-team/wa-js-api-server:1.0.0
   ```
+=======
+wppconnect/wa-js-api-server:1.0.0
+```
+
+>>>>>>> upstream/main
 ## License
 
 Copyright 2021 WPPConnect Team
